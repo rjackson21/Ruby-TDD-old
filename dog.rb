@@ -1,9 +1,10 @@
 class Dog
     def initialize(hunger_level: 0)
+        @hunger_level = hunger_level  
     end
 
     def hungry
-        true
+        @hunger_level > 5
     end
 
     def bark
